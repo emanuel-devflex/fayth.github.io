@@ -1,0 +1,374 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+/* Estructura Principal */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Lado izquierdo: Formulario */
+.form-section {
+    width: 50%;
+    background: rgba(5, 5, 5, 0.8);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Formulario */
+form {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.form-desc {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: #ccc;
+}
+
+.input-group {
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.input-group input::placeholder {
+    color: #aaa;
+}
+
+.forgot-password {
+    font-size: 0.9rem;
+    color: #4ea0ed;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+.submit-btn {
+    background: #4ea0ed;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background: #3a82c4;
+}
+
+.or-divider {
+    display: block;
+    color: #bbb;
+    margin: 1rem 0;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 1.2rem;
+
+    padding: 0.5rem;
+    transition: background 0.3s;
+}
+
+.social-icon:hover {
+    color: #727272;
+}
+
+.switch-form {
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.switch-form a {
+    color: #4ea0ed;
+    text-decoration: none;
+}
+
+.switch-form a:hover {
+    text-decoration: underline;
+}
+
+/* Lado derecho: Imagen de fondo */
+.image-section {
+    width: 50%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../img/intrumentos.jpeg) no-repeat center center/cover;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 250px; /* Asegura que las secciones no sean demasiado pequeñas */
+}
+
+.footer-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* ======== Responsivo ======== */
+
+/* Para pantallas pequeñas (tablets y móviles) */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column; /* Apilar los elementos en lugar de colocarlos en fila */
+    }
+
+    .form-section, .image-section {
+        width: 100%; /* Ambas secciones toman todo el ancho */
+        height: 800px; /* Cada sección ocupa la mitad de la pantalla */
+        
+    }
+
+    .form-section {
+        padding: 1.5rem;
+    }
+
+    form {
+        max-width: 100%; /* Ajustar el formulario para pantallas pequeñas */
+        padding: 1.5rem;
+    }
+
+    .form-title {
+        font-size: 1.8rem; /* Reducir el tamaño de los títulos en pantallas pequeñas */
+    }
+
+    .form-desc {
+        font-size: 0.9rem; /* Reducir la descripción */
+    }
+
+    .input-group input {
+        padding: 0.7rem; /* Reducir el tamaño de los inputs */
+    }
+
+    .social-icon {
+        font-size: 1rem; /* Reducir el tamaño de los íconos sociales */
+        padding: 0.4rem;
+    }
+
+    .image-section {
+        height: 50vh;
+        background-position: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        padding: 0 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 480px) {
+    .form-title {
+        font-size: 1.5rem;
+    }
+
+    .form-desc {
+        font-size: 0.8rem;
+    }
+
+    .input-group input {
+        padding: 0.6rem;
+    }
+
+    .submit-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+}
+
+@media(max-width:991px){
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+}

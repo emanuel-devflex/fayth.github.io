@@ -1,0 +1,354 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(168, 168, 168);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.navbar {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 2rem;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-menu a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.chulataDeFiltro{
+    padding-top: 65px;
+    padding-bottom: 70px;
+    display: flex;
+    width: 830px;
+    height: 550px;
+    flex-wrap: wrap; /* Esto permite que las imágenes se ajusten cuando la pantalla sea pequeña */
+    justify-content: center; /* Alinea las imágenes al centro */
+    gap: 20px; /* Añade un espacio entre las imágenes */
+}
+
+.chulataDeFiltro img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+    border-radius: 8px; /* Añadido borde redondeado a las imágenes */
+}
+
+.chulataDeFiltro img:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+.services {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/fondodos.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.services-content {
+    text-align: center;
+    color: white;
+}
+
+.services-content h2 {
+    font-size: 55px;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.services-content p {
+    font-size: 16px;
+    margin-bottom: 50px;
+    padding: 0 20px; /* Ajuste el padding para que no quede tan al borde */
+}
+
+.services-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en pantallas pequeñas */
+}
+
+.services-1 {
+    text-align: center;
+    width: 30%; /* Asegura que cada bloque tenga un 30% de ancho en pantallas grandes */
+    margin-bottom: 30px; /* Espaciado inferior para que los elementos no se peguen */
+}
+
+.services-1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgb(168, 168, 168);
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.services-1 h3 {
+    color: rgb(231, 231, 231);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.services-1 p {
+    font-size: 14px;
+    color: rgba(231, 231, 231, 0.9);
+    margin-bottom: 20px;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 12px 40px;
+    background-color: rgb(207, 55, 55);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.btn-1:hover {
+    background-color: rgb(141, 21, 21);
+    position: relative;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Añadir sombra al hacer hover */
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en pantallas pequeñas */
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+    min-width: 250px; /* Asegura que las secciones no sean demasiado pequeñas */
+}
+
+.footer-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #f1f1f1;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1rem;
+    color: #bbb;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+    color: #bbb;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #bbb;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+/* Estilos Responsivos */
+
+@media screen and (max-width: 1200px) {
+    .services-1 {
+        width: 30%; /* Asegura que tres servicios estén en fila en pantallas medianas */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .chulataDeFiltro {
+        width: 100%;  /* Se ajusta el contenedor al 100% de la pantalla */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+    .chulataDeFiltro img {
+        width: 150px;  /* Ajusta el tamaño de las imágenes */
+        height: 150px; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .services-group {
+        flex-direction: column;
+        align-items: center; /* Centra los bloques en pantallas más pequeñas */
+    }
+
+    .services-1 {
+        width: 80%; /* Los bloques ocupan el 80% del ancho */
+    }
+
+    .chulataDeFiltro img {
+        width: 100%;
+        height: 200px; /* Las imágenes ocupan toda la pantalla en dispositivos móviles */
+    }
+
+    .services-content h2 {
+        font-size: 40px;
+    }
+
+    .services-content p {
+        padding: 0 20px;
+    }
+
+    .btn-1 {
+        padding: 12px 30px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        padding: 0 15px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        margin-top: 20px;
+    }
+
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .chulataDeFiltro {
+        width: 100%; /* Se ajusta al 100% de la pantalla */
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+    }
+
+    .chulataDeFiltro img {
+        width: 120px;  /* Ajusta el tamaño de las imágenes */
+        height: 120px; /* Ajusta el tamaño de las imágenes */
+    }
+
+    .services-content h2 {
+        font-size: 30px;
+    }
+
+    .services-content p {
+        font-size: 14px;
+    }
+
+    .btn-1 {
+        padding: 10px 25px;
+    }
+}
+
+@media(max-width:991px){
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+}
