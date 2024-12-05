@@ -167,7 +167,7 @@ form {
 /* Lado derecho: Imagen de fondo */
 .image-section {
     width: 50%;
-    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(../img/intrumentos.jpeg) no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0,0,0,0.7)),url(intrumentos.jpeg) no-repeat center center/cover;
 }
 
 .footer {
