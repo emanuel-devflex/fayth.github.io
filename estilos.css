@@ -406,72 +406,164 @@ p{
     color: #fff;
 }
 
-/* Media Queries */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .header-content h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    .header-content p {
-        padding: 0 10px;
-        font-size: 14px;
-    }
-
-    .menu .navbar ul {
+    .footer-container {
         flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        right: 0;
-        display: none;
+        align-items: center;
     }
 
-    .menu .navbar ul li {
+    .footer-section {
+        padding: 0 15px;
         text-align: center;
+        margin-bottom: 20px;
     }
 
-    .menu label {
-        display: block;
-        color: white;
-        font-size: 25px;
+    .footer-bottom {
+        text-align: center;
+        margin-top: 20px;
     }
 
-    #menu:checked + .menu .navbar ul {
-        display: flex;
+    .social-icons {
+        margin-top: 20px;
     }
 
-    .general {
-        flex-direction: column;
-    }
-
-    .general-1, .general-2, .general-3 {
-        width: 100%;
-        padding: 20px;
+    .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 5px;
     }
 }
 
-@media (max-width: 480px) {
-    .header-content h1 {
-        font-size: 30px;
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
     }
 
-    .header-content p {
-        font-size: 12px;
+    .menu label{
+        display: initial;
     }
 
-    .btn-1 {
-        padding: 8px 20px;
-        font-size: 14px;
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(95, 104, 101);
+        display: none;
     }
 
-    .coffee-content h2, .general h2, .blog h3 {
-        font-size: 25px;
+    .menu .navbar ul li{
+        width: 100%;
     }
 
-    .coffee-group, .blog-content {
+    #menu:checked ~ .navbar{
+        display: inline;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content h1{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .coffee{
+        padding: 45px;
+    }
+
+    .coffee-content h2{
+        padding: 0;
+        font-size: 50px;
+    }
+
+    .txt-p{
+        padding: 0;
+    }
+
+    .coffee-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .coffee-img{
+        display: none;
+    }
+
+    .services{
+        padding: 30px;
+    }
+
+    .services-content p{
+        padding: 0;
+    }
+
+    .services-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .services-1{
+        margin-bottom: 25px;
+    }
+
+    .general{
         flex-direction: column;
     }
+
+    .general-1{
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .general-2, .general-3{
+        display: none;
+    }
+
+    .blog{
+        padding: 30px;
+    }
+
+    .blog-content{
+        flex-direction: column;
+    }
+
+    .blog-1{
+        padding: 0;
+    }
+
+    .footer-container {
+        padding: 20px;
+    }
+
+    .footer-section h3 {
+        font-size: 1.4rem;
+    }
+
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom p {
+        font-size: 0.9rem;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+    }
+
+}
 }
 
