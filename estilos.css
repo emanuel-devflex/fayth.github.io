@@ -407,32 +407,43 @@ p{
 }
 
 /* Responsive Styles */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
+/* Ajustes específicos para pantallas pequeñas */
+@media(max-width: 768px) {
+    .header-content {
+        padding: 20px; /* Reduce el padding */
     }
 
-    .footer-section {
-        padding: 0 15px;
-        text-align: center;
-        margin-bottom: 20px;
+    .header-content h1 {
+        font-size: 40px; /* Reduce el tamaño del texto */
+        line-height: 45px;
     }
 
-    .footer-bottom {
-        text-align: center;
-        margin-top: 20px;
+    .header-content p {
+        padding: 0; /* Elimina el padding lateral */
+        font-size: 14px; /* Ajusta el tamaño del texto */
+        line-height: 20px;
     }
 
-    .social-icons {
-        margin-top: 20px;
+    .btn-1 {
+        padding: 10px 20px; /* Ajusta el tamaño del botón */
+        font-size: 14px;
     }
 
-    .social-icons a {
-        font-size: 1.2rem;
-        margin: 0 5px;
+    /* Evita desbordamientos en los contenedores */
+    .header {
+        min-height: 50vh; /* Ajusta el alto mínimo */
     }
+
+    .coffee-content h2, 
+    .txt-p {
+        padding: 0 15px; /* Reduce el espacio alrededor del texto */
+    }
+
+    .header {
+    background-size: contain; /* Cambia cover a contain si necesitas ajustes específicos */
+    background-position: center;
 }
+
 
 
 @media(max-width:991px){
