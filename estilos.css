@@ -439,9 +439,7 @@ p{
         padding: 0 15px; /* Reduce el espacio alrededor del texto */
     }
 
-    .header {
-    background-size: contain; /* Cambia cover a contain si necesitas ajustes específicos */
-    background-position: center;
+
 }
 
 
