@@ -16,7 +16,7 @@ body{
 }
 
 .header{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/intrumentos.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(img/intrumentos.jpeg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@ body{
 }
 
 .general-2{
-    background-image: url(../img/pianoElectrico.jpg);
+    background-image: url(pianoElectrico.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,7 +174,7 @@ body{
 }
 
 .general-3{
-    background-image: url(../img/bajo.jpg);
+    background-image: url(img/bajo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
